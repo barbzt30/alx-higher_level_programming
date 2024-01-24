@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-def best_score(a_dictionary):
-    if not a_dictionary:
-        return (None)
+def square_matrix_simple(matrix=[]):
+    new_mat = matrix.copy()
 
-    return (max(a_dictionary, key=a_dictionary.get))
+    for h in range(len(matrix)):
+        new_mat[h] = list(map(lambda x: x**2, matrix[h]))
+
+        return new_mat)
